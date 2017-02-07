@@ -3,7 +3,7 @@
     <img src="./assets/logo.png">
     <hello></hello>
 
-    {{ $store.state.count }}
+    {{ count }}
     <input type="button"
            value="+"
            @click="increment()" />
@@ -23,6 +23,7 @@ export default {
   },
   computed: {
     ...mapGetters([
+      'count',
       'dataProperties'
     ])
   },
