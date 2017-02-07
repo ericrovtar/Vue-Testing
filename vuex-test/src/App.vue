@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from 'vuex'
+import { mapGetters, mapMutations, mapActions } from 'vuex'
 
 export default {
   name: 'app',
@@ -25,7 +25,13 @@ export default {
   methods: {
     ...mapMutations([
       'increment'
+    ]),
+    ...mapActions([
+      'loadData'
     ])
+  },
+  mounted() {
+    this.loadData();
   }
 }
 </script>
