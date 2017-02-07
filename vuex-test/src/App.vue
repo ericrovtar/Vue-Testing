@@ -7,21 +7,28 @@
     <input type="button"
            value="+"
            @click="increment()" />
+
+    {{ dataProperties }}
   </div>
 </template>
 
 <script>
 import Hello from './components/Hello'
-import { mapMutations } from 'vuex'
+import { mapGetters, mapMutations } from 'vuex'
 
 export default {
   name: 'app',
   components: {
     Hello
   },
+  computed: {
+    ...mapGetters([
+      'dataProperties'
+    ])
+  },
   methods: {
     ...mapMutations([
-        'increment'
+      'increment'
     ])
   }
 }
