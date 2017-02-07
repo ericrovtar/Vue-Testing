@@ -1,8 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
-
     {{ count }}
     <input type="button"
            value="+"
@@ -13,13 +10,11 @@
 </template>
 
 <script>
-import Hello from './components/Hello'
 import { mapGetters, mapMutations } from 'vuex'
 
 export default {
   name: 'app',
   components: {
-    Hello
   },
   computed: {
     ...mapGetters([
