@@ -1,4 +1,10 @@
-import { DATA_PROPERTIES } from './mutations';
+export const DATA_PROPERTIES = {
+    id: {
+        value: "ID",
+        required: true,
+        postBack: false
+    }
+}
 
 export const dataProperties = (state) =>  {
     return DATA_PROPERTIES
