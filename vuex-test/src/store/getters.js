@@ -1,9 +1,9 @@
 import { DATA_PROPERTIES } from './mutations';
 
-export const dataProperties = state =>  {
+export const dataProperties = (state) =>  {
     return DATA_PROPERTIES
 };
 
-export const count = state => {
+export const count = (state) => {
     return state.count;
 }
