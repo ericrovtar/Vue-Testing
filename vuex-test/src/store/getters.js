@@ -13,3 +13,7 @@ export const dataProperties = (state) =>  {
 export const count = (state) => {
     return state.count;
 }
+
+export const data = (state) => {
+    return state.data;
+}
